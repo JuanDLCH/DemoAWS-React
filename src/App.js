@@ -11,7 +11,7 @@ function App() {
   }, [])
 
   const getData = () => {
-    fetch('http://172.31.81.213:3001/sapos')
+    fetch('http://3.93.151.175:3001/sapos')
       .then(response => response.json())
       .then(data => setData(data))
       .catch(err => console.error(err))
@@ -22,7 +22,7 @@ function App() {
     const note = {
       nombre: textAreaValue
     }
-    axios.post('http://172.31.81.213:3001/sapos', note)
+    axios.post('http://3.93.151.175:3001/sapos', note)
     setTextAreaValue('')
     getData()
   }
