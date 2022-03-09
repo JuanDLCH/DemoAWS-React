@@ -1,0 +1,33 @@
+{
+  "sapos": [
+    {
+      "id": 1,
+      "nombre": "json-server",
+      "apellidos": "typicode",
+      "condicion": "sapo",
+      "nota": "soy un sapo"
+    },
+    {
+      "id": 2,
+      "nombre": "json",
+      "apellidos": "typicode",
+      "condicion": "no sapo",
+      "nota": "no soy un sapo"
+    },
+    {
+      "id": 3,
+      "nombre": "el sapo londoño",
+      "apellidos": "no se",
+      "condicion": "sapo",
+      "nota": "si soy un sapo"
+    },
+    {
+      "nombre": "hola mario sapo",
+      "id": 4
+    },
+    {
+      "nombre": "cano sapo",
+      "id": 5
+    }
+  ]
+}
