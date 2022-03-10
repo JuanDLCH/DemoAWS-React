@@ -32,17 +32,17 @@ function App() {
   }
 
   return (
-    <h1>
+    <div>
       <br></br>
       <br></br>
       <br></br>
       <br></br>
-      <center>Deja un mensaje para tus amigos :3
+      <center><h1>Deja un mensaje para tus amigos :3</h1>
       <ul>
         {
           data &&
           data.map(note => (
-            <h2><li key={note.id}>{note.nombre}</li></h2>
+            <li key={note.id}><p><strong>{note.nombre}</strong></p></li>
           ))
         }
       </ul>
@@ -50,7 +50,7 @@ function App() {
         <textarea name='nombre' onChange={handleOnChange} value={textAreaValue}></textarea>
         <button type='submit' onClick={handleClick}>add</button>
       </form> </center>
-    </h1>
+    </div>
   );
 }
 
