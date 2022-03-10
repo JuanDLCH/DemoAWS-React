@@ -33,19 +33,23 @@ function App() {
 
   return (
     <h1>
-      muy sapitos todos AWS
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <center>Deja un mensaje para tus amigos :3
       <ul>
         {
           data &&
           data.map(note => (
-            <li key={note.id}>{note.nombre}</li>
+            <h2><li key={note.id}>{note.nombre}</li></h2>
           ))
         }
       </ul>
       <form >
         <textarea name='nombre' onChange={handleOnChange} value={textAreaValue}></textarea>
         <button type='submit' onClick={handleClick}>add</button>
-      </form>
+      </form> </center>
     </h1>
   );
 }
