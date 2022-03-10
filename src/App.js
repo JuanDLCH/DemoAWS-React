@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import './App.css'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -40,7 +41,7 @@ function App() {
       <br></br>
       <br></br>
       <center>
-      <div className="badge bg-primary text-wrap" style="width: 30rem;">
+      <div className="badge bg-primary text-wrap">
             <h1>Deja un mensaje para tus amigos :3</h1>
       </div>
       <ul className="list-group">
