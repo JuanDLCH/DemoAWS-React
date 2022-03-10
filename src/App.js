@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
@@ -39,20 +40,20 @@ function App() {
       <br></br>
       <br></br>
       <center>
-      <div class="badge bg-primary text-wrap" style="width: 30rem;">
+      <div className="badge bg-primary text-wrap" style="width: 30rem;">
             <h1>Deja un mensaje para tus amigos :3</h1>
       </div>
-      <ul class="list-group">
+      <ul className="list-group">
         {
           data &&
           data.map(note => (
-            <li class="list-group-item" key={note.id}><p><strong>- {note.nombre} - <br></br></strong></p></li>
+            <li className="list-group-item" key={note.id}><p><strong>- {note.nombre} - <br></br></strong></p></li>
           ))
         }
       </ul>
       <form >
         <textarea name='nombre' onChange={handleOnChange} value={textAreaValue}></textarea> <br></br>
-        <button type='submit' class="btn btn-primary" onClick={handleClick}>add</button>
+        <button type='submit' className="btn btn-primary" onClick={handleClick}>add</button>
       </form> </center>
     </div>
   );
