@@ -37,18 +37,21 @@ function App() {
       <br></br>
       <br></br>
       <br></br>
-      <center><h1>Deja un mensaje para tus amigos :3</h1>
-      <ul>
+      <center>
+      <div class="badge bg-primary text-wrap" style="width: 30rem;">
+            <h1>Deja un mensaje para tus amigos :3</h1>
+      </div>
+      <ul class="list-group">
         {
           data &&
           data.map(note => (
-            <li key={note.id}><p><strong>{note.nombre}</strong></p></li>
+            <li class="list-group-item" key={note.id}><p><strong>- {note.nombre} - <br></br></strong></p></li>
           ))
         }
       </ul>
       <form >
-        <textarea name='nombre' onChange={handleOnChange} value={textAreaValue}></textarea>
-        <button type='submit' onClick={handleClick}>add</button>
+        <textarea name='nombre' onChange={handleOnChange} value={textAreaValue}></textarea> <br></br>
+        <button type='submit' class="btn btn-primary" onClick={handleClick}>add</button>
       </form> </center>
     </div>
   );
